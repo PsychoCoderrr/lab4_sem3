@@ -45,6 +45,10 @@ struct Vertex
 {
     T name;
     std::list<Edge<T>> list;
+    
+    Vertex() = default;
+
+    Vertex(T name) : name(name), list() {}
 };
 
 #endif //LAB4_GRAPH_PARTS
