@@ -15,17 +15,17 @@ public:
 
     Edge(Edge const &edge) : VertexName1(edge.VertexName1), VertexName2(edge.VertexName2), weight(edge.weight) {}
     
-    int GetWeight()
+    int GetWeight() const
     {
         return weight;
     }
     
-    T GetFirst()
+    T GetFirst() const
     {
         return VertexName1;
     }
     
-    T GetLast()
+    T GetLast() const
     {
         return VertexName2;
     }

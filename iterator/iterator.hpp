@@ -51,12 +51,12 @@ template <typename T> DynamicArray_iterator<T>::DynamicArray_iterator(const Dyna
 
 template <typename T> DynamicArray_iterator<T> DynamicArray_iterator<T>::operator+(const size_t &num) const noexcept
 {
-    return Vector_iterator<T>(p + num);
+    return DynamicArray_iterator<T>(p + num);
 }
 
 template <typename T> DynamicArray_iterator<T> DynamicArray_iterator<T>::operator-(const size_t &num) const noexcept
 {
-    return Vector_iterator<T>(p - num);
+    return DynamicArray_iterator<T>(p - num);
 }
 
 template <typename T> size_t DynamicArray_iterator<T>::operator-(const DynamicArray_iterator &other) const
